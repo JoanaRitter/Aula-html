@@ -1,0 +1,25 @@
+<html>
+<!--o seu universo é aqui-->
+
+<head>
+
+</head>
+
+<body> 
+    <input type="number" id="numero">
+    <button onclick="Calcular(Number(document.getElementById('numero').value))">calc</button> resultado: <input id="result">
+</body>
+
+<script>
+    var pi = 3.14159;
+
+    //calcula a area do circulo
+    function Calcular(r) {
+
+        //unica coisa que precia ter aqui
+
+        document.getElementById("result").value = pi * Math.pow(r, 2);
+    }
+</script>
+
+</html>
