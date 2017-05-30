@@ -5,20 +5,24 @@
 
 </head>
 
-<body> 
+<body>
     <input type="number" id="numero">
-    <button onclick="Calcular(Number(document.getElementById('numero').value))">calc</button> resultado: <input id="result">
+    <button onclick="Calcular()">calc</button> resultado: <input id="result">
 </body>
 
 <script>
-    var pi = 3.14159;
+    function Cacular() {
 
-    //calcula a area do circulo
-    function Calcular(r) {
+        var numero = Number(document.getElementById('numero').value)
+            pi = 3.14159;
 
-        //unica coisa que precia ter aqui
+        function CalcularAreaDoCirculo(valor, pi) {
+            return pi * Math.pow(valor, 2);
+        }
 
-        document.getElementById("result").value = pi * Math.pow(r, 2);
+        //passa resultado p tela
+        document.getElementById('result').value = CalcularAreaDoCirculo(numero, pi);;
+
     }
 </script>
 

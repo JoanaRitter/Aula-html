@@ -1,0 +1,39 @@
+<head>
+
+</head>
+
+<body>
+    <input type="number" id="ia">
+    <input type="number" id="ib">
+    <input type="number" id="ic">
+    <button onclick="calcular()">calcular</button>
+    <input type="text" id="ir">
+
+    <script>
+        var a, b, c;
+
+        function calcular() {
+
+            a = Number(document.getElementById('ia').value);
+            b = Number(document.getElementById('ib').value);
+            c = Number(document.getElementById('ic').value);
+
+            function calc(b, c) {
+                return b * c;
+
+
+            }
+
+            function calc2(b, c) {
+                //return
+            }
+
+            r = calc(b, c);
+
+            document.getElementById('ir').value = r;
+            document.getElementById('ir').value = 'SALARIO = U$ ' + r.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
